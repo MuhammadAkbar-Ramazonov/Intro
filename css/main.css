@@ -1,0 +1,174 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0;
+    font-family: "Poppin","Aria", sans-serif;
+    font-weight: 500;
+    font-size: normal;
+    background-image: url("../kartinki/bg.jpg");
+    background-position: center center;
+}
+
+
+.container{
+    width: 1150px;
+    margin: 0 auto;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/poppins-v20-latin-regular.woff2') format('woff2'), 
+    url('../fonts/poppins-v20-latin-regular.woff') format('woff'); 
+}
+
+@font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    src: local(""),
+    url("../fonts/poppins-v20-latin-500.woff2") format("woff2"), 
+    url("../fonts/poppins-v20-latin-500.woff") format("woff"); 
+}
+@font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    src: url("../fonts/poppins-v20-latin-600.woff2") format("woff2"), 
+    url("../fonts/poppins-v20-latin-600.woff") format("woff"); 
+}
+@font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/poppins-v20-latin-700.woff2") format("woff2"), 
+    url("../fonts/poppins-v20-latin-700.woff") format("woff"); 
+}
+
+
+
+.site-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 121px;
+    padding-bottom: 121px;
+}
+.site-title {
+    width: 630px;
+    margin-right: 45px;
+}
+.site-title-h1 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 55px;
+    margin-top: 0;
+    margin-bottom: 11px;
+    color: #ffffff;
+}
+.site-title-p {
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #ffffff;
+}
+
+.site-form {
+    width: 540px;
+    height: 474px;
+    padding: 40px;
+    background-color: #fff;
+}
+.site-form-wrapper-link {
+    display: block;
+    width: 540px;
+    height: 60px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+    text-decoration: none;
+    padding: 17px 110px;
+    color: #ffffff;
+    background-color: #5E54A4;
+    box-shadow: 0px 8px 0px #00000025;
+    border-radius: 10px;
+}
+
+input::placeholder{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 26px;
+    color: #3D3B48;
+    opacity: 0.75;
+}
+.site-form-name {
+    width: 460px;
+    height: 56px;
+    margin-bottom: 20px;
+    padding: 15px 32px;
+    color: #3D3B48;;
+    background-color: #ffffff;
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    outline: none;
+}
+.site-form-name:focus{
+    border: 1px solid #5E54A4;
+}
+
+.site-form-email {
+    width: 460px;
+    height: 56px;
+    margin-bottom: 20px;
+    padding: 15px 32px;
+    background-color: #ffffff;
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    outline: none;
+}
+.site-form-email:focus{
+    border: 1px solid #5E54A4;
+}
+.site-form-password {
+    width: 460px;
+    height: 56px;
+    margin-bottom: 20px;
+    padding: 15px 32px;
+    background-color: #ffffff;
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    outline: none;
+}
+.site-form-password:focus{
+    border: 1px solid #5E54A4;
+}
+.site-form-button {
+    width: 460px;
+    height: 56px;
+    color: #fff;
+    background: #38CC8B;
+    box-shadow: inset 0px -4px 0px #00000017;
+    border: 0;
+    border-radius: 5px;
+}
+
+.site-form-p {
+    font-size: 11px;
+    line-height: 26px;
+    text-align: center;
+    color: #bab7d4;
+}
+.site-form-link {
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 26px;
+    text-decoration: none;
+    color: #ff7979;
+}
