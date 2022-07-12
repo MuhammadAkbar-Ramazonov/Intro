@@ -1,5 +1,13 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 *{
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 
@@ -54,9 +62,15 @@ body{
 
 
 .site-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-top: 121px;
     padding-bottom: 121px;
 }
@@ -96,8 +110,41 @@ body{
     padding: 17px 110px;
     color: #ffffff;
     background-color: #5E54A4;
-    box-shadow: 0px 8px 0px #00000025;
+    -webkit-box-shadow: 0px 8px 0px #00000025;
+            box-shadow: 0px 8px 0px #00000025;
     border-radius: 10px;
+}
+
+input::-webkit-input-placeholder{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 26px;
+    color: #3D3B48;
+    opacity: 0.75;
+}
+
+input::-moz-placeholder{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 26px;
+    color: #3D3B48;
+    opacity: 0.75;
+}
+
+input:-ms-input-placeholder{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 26px;
+    color: #3D3B48;
+    opacity: 0.75;
+}
+
+input::-ms-input-placeholder{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 26px;
+    color: #3D3B48;
+    opacity: 0.75;
 }
 
 input::placeholder{
@@ -129,6 +176,24 @@ input::placeholder{
     outline: none;
 }
 
+.form-input:not(:-moz-placeholder-shown):not(:focus):invalid{
+    color: #F03535;
+    border: 1px solid #F03535;;
+    background-image: url("../kartinki/invalid.svg");
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    background-position: right 7px center;
+}
+
+.form-input:not(:-ms-input-placeholder):not(:focus):invalid{
+    color: #F03535;
+    border: 1px solid #F03535;;
+    background-image: url("../kartinki/invalid.svg");
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    background-position: right 7px center;
+}
+
 .form-input:not(:placeholder-shown):not(:focus):invalid{
     color: #F03535;
     border: 1px solid #F03535;;
@@ -136,6 +201,42 @@ input::placeholder{
     background-repeat: no-repeat;
     background-size: 24px 24px;
     background-position: right 7px center;
+}
+
+
+.form-input::-webkit-input-placeholder{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 26px;
+    color: #3D3B48;
+    opacity: 0.75;
+}
+
+
+.form-input::-moz-placeholder{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 26px;
+    color: #3D3B48;
+    opacity: 0.75;
+}
+
+
+.form-input:-ms-input-placeholder{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 26px;
+    color: #3D3B48;
+    opacity: 0.75;
+}
+
+
+.form-input::-ms-input-placeholder{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 26px;
+    color: #3D3B48;
+    opacity: 0.75;
 }
 
 
@@ -151,11 +252,18 @@ input::placeholder{
     border: 1px solid #5E54A4;
 }
 
-/* 
-.site-inner-form-name:not(:placeholder-shown):not(:focus):invalid ~ .site-form-invalid{
+
+.form-input:not(:-moz-placeholder-shown):not(:focus):invalid ~ .site-form-text{
     display: inline-block;
     opacity: 1;
-} */
+}
+
+
+.form-input:not(:-ms-input-placeholder):not(:focus):invalid ~ .site-form-text{
+    display: inline-block;
+    opacity: 1;
+}
+
 
 .form-input:not(:placeholder-shown):not(:focus):invalid ~ .site-form-text{
     display: inline-block;
@@ -176,7 +284,8 @@ input::placeholder{
     height: 56px;
     color: #fff;
     background: #38CC8B;
-    box-shadow: inset 0px -4px 0px #00000017;
+    -webkit-box-shadow: inset 0px -4px 0px #00000017;
+            box-shadow: inset 0px -4px 0px #00000017;
     border: 0;
     border-radius: 5px;
 }
