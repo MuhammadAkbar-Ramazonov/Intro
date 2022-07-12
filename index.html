@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html>  
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -19,10 +19,26 @@
                     <div class="site-form-wrapper">
                         <a class="site-form-wrapper-link" href="#"> <strong class="site-form-wrapper-strong">Try it free 7 days</strong> then $20/mo. thereafter</a>
                         <form class="site-form" action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
-                            <input class="site-form-name" type="text" name="user_name" placeholder="First name" aria-label="Please write your first name!">
-                            <input class="site-form-name" type="text" name="user_last_name" placeholder="Last Name" aria-label="Please write your Last Name!">
-                            <input class="site-form-email" type="email" name="user_email" placeholder="Email Address" aria-label="Please write your Email Address!">
-                            <input class="site-form-password" type="password" name="user_password" placeholder="Password" aria-label="Please write your Password!">
+                            <label class="site-form-lable">
+                                <input class="site-form-name form-input" type="text" name="user_name" placeholder="First name" minlength="2" aria-label="Please write your first name!" required>
+                                <span class="site-form-text">First Name cannot be empty</span>
+                            </label>
+                            
+                            <label class="site-form-lable">
+                                <input class="site-form-name form-input" type="text" name="user_last_name" placeholder="Last Name" minlength="2" aria-label="Please write your Last Name!" required>
+                                <span class="site-form-text">Last Name cannot be empty</span>
+                            </label>
+                            
+                            <label class="site-form-lable">
+                                <input class="site-form-email form-input" type="email" name="user_email" placeholder="Email Address" aria-label="Please write your Email Address!" required>
+                                <span class="site-form-text">Looks like this is not an email</span>
+                            </label>
+                            
+                            <label class="site-form-lable">
+                                <input class="site-form-password form-input" type="password" name="user_password" placeholder="Password" minlength="8" aria-label="Please write your Password!" required>
+                                <span class="site-form-text">Password cannot be empty</span>
+                            </label>
+
                             <button class="site-form-button" type="submit">CLAIM YOUR FREE TRIAL</button>
                             <p class="site-form-p">By clicking the button, you are agreeing to our <a class="site-form-link" href="#"> Terms and Services</a></p>
                         </form>

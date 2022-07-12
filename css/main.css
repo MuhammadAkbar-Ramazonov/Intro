@@ -82,7 +82,6 @@ body{
 
 .site-form {
     width: 540px;
-    height: 474px;
     padding: 40px;
     background-color: #fff;
 }
@@ -108,10 +107,20 @@ input::placeholder{
     color: #3D3B48;
     opacity: 0.75;
 }
-.site-form-name {
+
+.site-form-lable{
+    display: inline-block;
+    text-align: end;
+    margin-bottom: 42px;
+}
+
+.form-input{
     width: 460px;
     height: 56px;
-    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 26px;
+    margin-bottom: 6px;
     padding: 15px 32px;
     color: #3D3B48;;
     background-color: #ffffff;
@@ -119,36 +128,49 @@ input::placeholder{
     border-radius: 5px;
     outline: none;
 }
-.site-form-name:focus{
+
+.form-input:not(:placeholder-shown):not(:focus):invalid{
+    color: #F03535;
+    border: 1px solid #F03535;;
+    background-image: url("../kartinki/invalid.svg");
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    background-position: right 7px center;
+}
+
+
+.form-input::placeholder{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 26px;
+    color: #3D3B48;
+    opacity: 0.75;
+}
+
+.form-input:focus{
     border: 1px solid #5E54A4;
 }
 
-.site-form-email {
-    width: 460px;
-    height: 56px;
-    margin-bottom: 20px;
-    padding: 15px 32px;
-    background-color: #ffffff;
-    border: 1px solid #dedede;
-    border-radius: 5px;
-    outline: none;
+/* 
+.site-inner-form-name:not(:placeholder-shown):not(:focus):invalid ~ .site-form-invalid{
+    display: inline-block;
+    opacity: 1;
+} */
+
+.form-input:not(:placeholder-shown):not(:focus):invalid ~ .site-form-text{
+    display: inline-block;
+    opacity: 1;
 }
-.site-form-email:focus{
-    border: 1px solid #5E54A4;
+
+
+.site-form-text{
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 16px;
+    color: #FF7979;
+    opacity: 0;
 }
-.site-form-password {
-    width: 460px;
-    height: 56px;
-    margin-bottom: 20px;
-    padding: 15px 32px;
-    background-color: #ffffff;
-    border: 1px solid #dedede;
-    border-radius: 5px;
-    outline: none;
-}
-.site-form-password:focus{
-    border: 1px solid #5E54A4;
-}
+
 .site-form-button {
     width: 460px;
     height: 56px;
